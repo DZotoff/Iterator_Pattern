@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,11 +10,11 @@ namespace iterator_pat
     //implementation of the PancakeHouseMenu
     class PancakeHouseMenu : Menu
     {
-        private List<MenuItem> menuItems;
+        private ArrayList menuItems;
 
         public PancakeHouseMenu()
         {
-            menuItems = new List<MenuItem>();
+            menuItems = new ArrayList();
 
             // Add menu items
             AddItem("K&B's Pancake Breakfast", "Pancakes with scrambled eggs, and toast", true, 2.99);

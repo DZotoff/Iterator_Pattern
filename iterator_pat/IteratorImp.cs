@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,10 +9,10 @@ namespace iterator_pat
 {
     class IteratorImp : Iterator
     {
-        private List<MenuItem> menuItems;
+        private ArrayList menuItems;
         private int position = 0;
 
-        public IteratorImp(List<MenuItem> items)
+        public IteratorImp(ArrayList items)
         {
             menuItems = items;
         }
@@ -23,7 +24,7 @@ namespace iterator_pat
 
         public MenuItem Next()
         {
-            MenuItem menuItem = menuItems[position];
+            MenuItem menuItem = (MenuItem)menuItems[position];
             position++;
             return menuItem;
         }

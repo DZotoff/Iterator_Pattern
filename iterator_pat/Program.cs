@@ -9,7 +9,6 @@ interface Iterator
     MenuItem Next();
 }
 
-
 interface Menu
 {
     Iterator CreateIterator();

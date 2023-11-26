@@ -37,7 +37,7 @@ namespace iterator_pat
 
     public Iterator CreateIterator()
     {
-        return new IteratorImp(new List<MenuItem>(menuItems));
+        return new DinerMenuIterator(menuItems);
     }
 }
 }
